@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding.sliderButton.setOnClickListener(this)
         binding.rangeSliderButton.setOnClickListener(this)
         binding.outlinedButton.setOnClickListener(this)
+        binding.outlinedIconButton.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -21,6 +22,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.sliderButton ->supportFragmentManager.beginTransaction().replace(R.id.contentFragment,SliderMaterial()).commit()
             R.id.rangeSliderButton ->supportFragmentManager.beginTransaction().replace(R.id.contentFragment,RangeSliderMaterial()).commit()
             R.id.outlinedButton->supportFragmentManager.beginTransaction().replace(R.id.contentFragment,CheckBoxMaterial()).commit()
+            R.id.outlinedIconButton->supportFragmentManager.beginTransaction().replace(R.id.contentFragment,Toggle()).commit()
         }
 
     }

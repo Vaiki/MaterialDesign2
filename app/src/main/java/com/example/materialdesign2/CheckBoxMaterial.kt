@@ -1,6 +1,6 @@
 package com.example.materialdesign2
 
-
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -14,7 +14,12 @@ import com.google.android.material.snackbar.Snackbar
 
 class CheckBoxMaterial : Fragment() {
     private lateinit var binding: FragmentCheckBoxMaterialBinding
+    private var thisContext: Context? = null
 
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        thisContext = context
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -32,9 +37,9 @@ class CheckBoxMaterial : Fragment() {
             if (isChecked) {
                 Snackbar.make(buttonView, "Добавлено в избранное", Snackbar.LENGTH_LONG)
                     .setAction("ACTION") {}
-                    .setBackgroundTint(activity?.let {ContextCompat.getColor(it,R.color.black)}!!)
-                    .setTextColor(activity?.let { ContextCompat.getColor(it, R.color.white) }!!)
-                    .setActionTextColor(activity?.let {ContextCompat.getColor(it,R.color.orange)}!!)
+                    .setBackgroundTint(context?.let {ContextCompat.getColor(it,R.color.black)}!!)
+                    .setTextColor(context?.let { ContextCompat.getColor(it, R.color.white) }!!)
+                    .setActionTextColor(context?.let {ContextCompat.getColor(it,R.color.orange)}!!)
                     .show()
 
 
