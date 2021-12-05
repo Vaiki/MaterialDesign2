@@ -11,12 +11,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this,R.layout.activity_main)
-        binding.SliderButton.setOnClickListener(this)
+        binding.sliderButton.setOnClickListener(this)
+        binding.rangeSliderButton.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
         when(v?.id){
-            R.id.SliderButton ->{supportFragmentManager.beginTransaction().replace(R.id.contentFragment,SliderMaterial()).commit()}
+            R.id.sliderButton ->supportFragmentManager.beginTransaction().replace(R.id.contentFragment,SliderMaterial()).commit()
+            R.id.rangeSliderButton ->supportFragmentManager.beginTransaction().replace(R.id.contentFragment,RangeSliderMaterial()).commit()
         }
 
     }
