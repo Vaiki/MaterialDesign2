@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">MaterialDesign2</string>
+    <string name="slider">Slider</string>
+    <string name="range_slider">Range Slider </string>
+    <string name="outlinedButton">Out Lined Button</string>
+    <string name="outlinedButtonIcon">Out Lined Button Icon</string>
+    <string name="containedButton">Contained Button</string>
+    <string name="containedButtonIcon">Contained Button Icon</string>
+    <string name="yourSelected">Ваш выбор: %1$d</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
