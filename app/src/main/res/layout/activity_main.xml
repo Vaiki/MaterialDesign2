@@ -78,7 +78,7 @@
             android:text="@string/containedButton"
             android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sliderButton" />
+            app:layout_constraintTop_toBottomOf="@+id/outlinedIconButton" />
 
         <Button
             android:id="@+id/containedButtonIcon"
