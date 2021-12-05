@@ -2,7 +2,7 @@
     <string name="app_name">MaterialDesign2</string>
     <string name="slider">Slider</string>
     <string name="range_slider">Range Slider </string>
-    <string name="outlinedButton">Out Lined Button</string>
+    <string name="outlinedButton">Material Check Box</string>
     <string name="outlinedButtonIcon">Out Lined Button Icon</string>
     <string name="containedButton">Contained Button</string>
     <string name="containedButtonIcon">Contained Button Icon</string>

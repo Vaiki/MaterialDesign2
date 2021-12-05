@@ -10,13 +10,11 @@
 
         <Button
             android:id="@+id/sliderButton"
-            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/slider"
-            app:icon="@drawable/ic_slider"
-            app:iconTint="@color/white"
             android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -32,7 +30,7 @@
             android:layout_marginTop="16dp"
             android:text="@string/range_slider"
             android:textColor="@color/white"
-            app:icon="@drawable/ic_range_slider"
+            app:icon="@drawable/ic_slider"
             app:iconTint="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
