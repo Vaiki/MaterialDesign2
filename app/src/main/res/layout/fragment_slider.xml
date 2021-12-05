@@ -21,25 +21,26 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.google.android.material.slider.Slider
-            android:id="@+id/slider"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_marginTop="16dp"
-            android:stepSize="1"
-            android:valueFrom="0"
-            android:valueTo="10"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/header_title"
-            app:thumbColor="@android:color/holo_orange_dark"
-            app:tickColorActive="@color/white"
-            app:tickColorInactive="@android:color/black"
-            app:trackColorActive="@android:color/holo_blue_dark"
-            app:trackColorInactive="@android:color/holo_blue_light" />
+            <com.google.android.material.slider.Slider
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:stepSize="1"
+                android:valueFrom="0"
+                android:valueTo="10"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/header_title"
+                app:thumbColor="@android:color/holo_orange_dark"
+                app:tickColorActive="@color/white"
+                app:tickColorInactive="@android:color/black"
+                app:trackColorActive="@android:color/holo_orange_dark"
+                app:trackColorInactive="@android:color/holo_blue_light" />
 
-        <androidx.appcompat.widget.AppCompatTextView
+            <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/selectedPart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

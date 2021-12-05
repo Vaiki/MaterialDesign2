@@ -9,12 +9,14 @@
         tools:context=".MainActivity">
 
         <Button
-            android:id="@+id/SliderButton"
-            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:id="@+id/sliderButton"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/slider"
+            app:icon="@drawable/ic_slider"
+            app:iconTint="@color/white"
             android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -23,18 +25,18 @@
             app:strokeWidth="1dp" />
 
         <Button
-            android:id="@+id/iconButton"
+            android:id="@+id/rangeSliderButton"
             style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/range_slider"
             android:textColor="@color/white"
-            app:icon="@drawable/ic_slider"
+            app:icon="@drawable/ic_range_slider"
             app:iconTint="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/SliderButton"
+            app:layout_constraintTop_toBottomOf="@+id/sliderButton"
             app:strokeColor="@color/white"
             app:strokeWidth="1dp" />
 
@@ -48,7 +50,7 @@
             android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/iconButton"
+            app:layout_constraintTop_toBottomOf="@+id/rangeSliderButton"
             app:strokeColor="@color/white"
             app:strokeWidth="1dp" />
 
