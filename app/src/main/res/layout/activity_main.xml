@@ -69,7 +69,7 @@
             app:strokeWidth="1dp" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/dialog_Btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -80,8 +80,16 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/outlinedIconButton" />
 
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rangeSliderButton" />
         <Button
-            android:id="@+id/containedButtonIcon"
+            android:id="@+id/multiDialog"
             style="@style/Widget.MaterialComponents.Button.Icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -93,12 +101,12 @@
             app:icon="@drawable/ic_play"
             app:iconTint="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button" />
+            app:layout_constraintTop_toBottomOf="@+id/dialog_Btn" />
         <FrameLayout
             android:id="@+id/contentFragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/containedButtonIcon"
+            app:layout_constraintTop_toBottomOf="@+id/multiDialog"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
