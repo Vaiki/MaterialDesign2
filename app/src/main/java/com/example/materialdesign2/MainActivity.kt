@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding.outlinedIconButton.setOnClickListener(this)
         binding.dialogBtn.setOnClickListener(this)
         binding.multiDialog.setOnClickListener(this)
+        binding.textFieldsBtn.setOnClickListener(this)
     }
 
 
@@ -84,7 +85,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     .show()
                 textColorDialog(builder)
             }
-
+R.id.textFieldsBtn -> supportFragmentManager.beginTransaction().replace(R.id.contentFragment,TextFieldsFrag()).commit()
         }
 
     }

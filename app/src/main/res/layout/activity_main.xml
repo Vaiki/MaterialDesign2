@@ -88,6 +88,7 @@
             android:layout_marginTop="16dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/rangeSliderButton" />
+
         <Button
             android:id="@+id/multiDialog"
             style="@style/Widget.MaterialComponents.Button.Icon"
@@ -102,15 +103,30 @@
             app:iconTint="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/dialog_Btn" />
+
+        <Button
+            android:id="@+id/textFieldsBtn"
+            style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/white"
+            app:icon="@drawable/ic_text"
+            app:iconTint="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/dialog_Btn"
+            app:layout_constraintStart_toEndOf="@+id/outlinedButton"
+            app:layout_constraintTop_toBottomOf="@+id/outlinedIconButton"
+            app:strokeColor="@color/white"
+            app:strokeWidth="1dp" />
+
         <FrameLayout
             android:id="@+id/contentFragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/multiDialog"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/multiDialog" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

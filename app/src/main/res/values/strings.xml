@@ -23,4 +23,8 @@
     <string name="onePart">onePart</string>
     <string name="threePart">threePart</string>
     <string name="twoPart">twoPart</string>
+    <string name="textFields">Text Fields</string>
+    <string name="labelCity">Label City</string>
+    <string name="enterCity">Enter City</string>
+    <string name="help">Help</string>
 </resources>
